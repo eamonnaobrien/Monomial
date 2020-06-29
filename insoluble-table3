@@ -1,0 +1,20 @@
+SetVerbose ("Infinite", 0);
+AttachSpec ("spec");
+
+N := [];
+C := [0];
+for m in [2..10^6] do
+   "\n";
+   B := PrimeBasis (m);
+   nmr := 0;
+   "m is ", m, B;
+   for p in B do 
+      if p le 11 then 
+         L,P := MonomialClasses (p, m: Soluble := false, Count := true);
+         "\nINSOLUBLE Order = ", m, " Dimension = ", p, "# of reps is ", #L;
+         nmr +:= #P;
+      end if;
+   end for;
+   Append (~C, nmr);
+//   if #C mod 100000 eq 0 then "UP TO NOW"; PrintFileMagma ("NEW-TABLE2", C); end if;
+end for;

@@ -1,0 +1,18 @@
+AttachSpec ("spec");
+SetVerbose ("Infinite", 0);
+
+N := [];
+C := [0];
+for m in [2..10^6] do
+   "\n";
+   B := PrimeBasis (m);
+   nmr := 0;
+   "m is ", m, B;
+   for p in B do 
+         L, P := MonomialClasses (p, m: Insoluble := false, Count := true);
+         "\nOrder = ", m, " Dimension = ", p, "# of reps is ", #L;
+         nmr +:= #P;
+   end for;
+   Append (~C, nmr);
+//    if #C mod 10000 eq 0 then "UP TO NOW"; PrintFileMagma ("NEW-TABLE1", C); end if;
+end for;

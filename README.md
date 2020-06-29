@@ -35,6 +35,7 @@ L := MonomialClasses (7, 55440: Soluble := false);
 // count the number of 3-dimension monomial representations for groups of order 270000
 // L is empty; the # of representation is #P
 L, P := MonomialClasses (3, 270000: Count := true);
+#P; 
 
 // all 3-dimensional irreducible groups of order 3600
 L := IrreducibleClasses (3, 3600);

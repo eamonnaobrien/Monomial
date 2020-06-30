@@ -3,7 +3,7 @@ Monomial groups in characteristic 0 and prime degree
 
 Dane Flannery and Eamonn O'Brien
 
-Code prepared June 2020
+Magma code prepared June 2020
 
 The code is based on the paper: 
 

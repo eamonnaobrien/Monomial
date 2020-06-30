@@ -7,7 +7,7 @@ Code prepared June 2020
 
 The code is based on the paper: 
 
-Z. B\'{a}cskai, D.L. Flannery, and E.A. O'Brien.  "Classifying finite monomial linear groups of prime degree". Preprint 2020.
+Z. B'acskai, D.L. Flannery, and E.A. O'Brien.  "Classifying finite monomial linear groups of prime degree". Preprint 2020.
 
 ===========================
 

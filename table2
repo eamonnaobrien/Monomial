@@ -1,0 +1,47 @@
+AttachSpec ("spec");
+SetEchoInput(true);
+
+p := 3;
+
+C := [];
+tt := Cputime ();
+for i in [1..2000] do
+X := MonomialClasses (p, i);
+Append (~C, #X);
+if i mod 1000 eq 0 then i, #X;
+end if;
+end for;
+ &+C, Cputime (tt);
+
+for i in [2001..4000] do
+X := MonomialClasses (p, i);
+Append (~C, #X);
+if i mod 1000 eq 0 then i, #X;
+end if;
+end for;
+ &+C, Cputime (tt);
+
+for i in [4001..6000] do
+X := MonomialClasses (p, i);
+ Append (~C, #X);
+if i mod 1000 eq 0 then i, #X;
+end if;
+end for;
+ &+C, Cputime (tt);
+
+for i in [6001..8000] do
+X := MonomialClasses (p, i);
+ Append (~C, #X);
+if i mod 1000 eq 0 then i, #X;
+end if;
+end for;
+ &+C, Cputime (tt);
+
+for i in [8001..10000] do
+X := MonomialClasses (p, i);
+ Append (~C, #X);
+if i mod 1000 eq 0 then i, #X;
+end if;
+end for;
+ &+C, Cputime (tt);
+

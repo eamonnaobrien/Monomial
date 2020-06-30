@@ -54,5 +54,5 @@ L, P := MonomialClasses (3, 270000: Count := true);
 L := IrreducibleClasses (3, 3600);
 
 The following files illustrate related computations:
-check, primitive-check-dim[2-3], insoluble-table3, soluble-table3, table2, sample  
+insoluble-table3, soluble-table3, table2, sample  
 

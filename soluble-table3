@@ -2,8 +2,8 @@ AttachSpec ("spec");
 SetVerbose ("Infinite", 0);
 
 N := [];
-C := [0];
-for m in [2..10^6] do
+C := [];
+for m in [1..10^6] do
    "\n";
    B := PrimeBasis (m);
    nmr := 0;
@@ -14,5 +14,4 @@ for m in [2..10^6] do
          nmr +:= #P;
    end for;
    Append (~C, nmr);
-//    if #C mod 10000 eq 0 then "UP TO NOW"; PrintFileMagma ("NEW-TABLE1", C); end if;
 end for;

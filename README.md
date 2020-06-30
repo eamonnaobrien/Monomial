@@ -2,7 +2,9 @@
 Monomial groups in characteristic 0 and prime degree 
 
 Dane Flannery and Eamonn O'Brien
+
 Code prepared June 2020
+
 ===========================
 
 Intrinsic functions are the following:
@@ -27,16 +29,22 @@ intrinsic IrreducibleClasses (p :: RngIntElt, m :: RngIntElt:
 A few examples:
 
 // all 5-dimensional monomial representation for groups of order 2000
+
 L := MonomialClasses (5, 2000);
 
 // all 7-dimensional monomial representations for insoluble groups of order 55440
+
 L := MonomialClasses (7, 55440: Soluble := false);
 
 // count the number of 3-dimension monomial representations for groups of order 270000
+
 // L is empty; the # of representation is #P
+
 L, P := MonomialClasses (3, 270000: Count := true);
-#P; 
+
+#P; // number of classes  
 
 // all 3-dimensional irreducible groups of order 3600
+
 L := IrreducibleClasses (3, 3600);
 

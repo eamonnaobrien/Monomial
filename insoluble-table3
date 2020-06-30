@@ -16,5 +16,4 @@ for m in [2..10^6] do
       end if;
    end for;
    Append (~C, nmr);
-//   if #C mod 100000 eq 0 then "UP TO NOW"; PrintFileMagma ("NEW-TABLE2", C); end if;
 end for;

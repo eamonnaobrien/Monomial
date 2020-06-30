@@ -41,7 +41,7 @@ L := MonomialClasses (5, 2000);
 
 L := MonomialClasses (7, 55440: Soluble := false);
 
-// count the number of 3-dimension monomial representations for groups of order 270000
+// count the number of 3-dimensional monomial representations for groups of order 270000
 
 // L is empty; the # of representation is #P
 

@@ -16,7 +16,7 @@ Intrinsic functions are the following:
 intrinsic MonomialClasses (p :: RngIntElt, m :: RngIntElt :
   Algebras := false, Count := false, Soluble := true, Insoluble := true) -> [], []
   
-{return representatives of conjugacy classes of monomial subgroups
+{return representatives of conjugacy classes of monomial irreducible subgroups
  of order m in GL(p, C), where p is a prime, and their parameters;
  if either Soluble or Insoluble is false, then the corresponding groups
  are omitted; default for both is true; if Count then return [] and sequence

@@ -10,8 +10,8 @@ Code prepared June 2020
 Intrinsic functions are the following:
 
 intrinsic MonomialClasses (p :: RngIntElt, m :: RngIntElt :
-  Algebras := false,
-  Count := false, Soluble := true, Insoluble := true) -> [], []
+  Algebras := false, Count := false, Soluble := true, Insoluble := true) -> [], []
+  
 {return representatives of conjugacy classes of monomial subgroups
  of order m in GL(p, C), where p is a prime, and their parameters;
  if either Soluble or Insoluble is false, then the corresponding groups
@@ -21,6 +21,7 @@ intrinsic MonomialClasses (p :: RngIntElt, m :: RngIntElt :
 
 intrinsic IrreducibleClasses (p :: RngIntElt, m :: RngIntElt:
   Soluble := true, Insoluble := true) -> []
+
 {return representatives of conjugacy classes of irreducible subgroups
  of order m in GL(p, C), where p is 2 or 3, as lists of monomial and
  primitive groups; if either Soluble or Insoluble is false, then the

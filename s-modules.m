@@ -254,7 +254,7 @@ end function;
 
 MyEvaluate := function (f, s, b)
    C := Coefficients (f);
-   return &*[s^(-i+1) * (b^C[i]) * (s^(i-1)): i in [1..#C]];
+   return &*[s^(-i+1) * (b^C[i]) * s^(i-1): i in [1..#C]];
    // return &*[(b^C[i])^(s^(i-1)): i in [1..#C]];
 end function;
 
@@ -264,7 +264,7 @@ Def_x_qnr := function (p, q, n, r)
    facs := Def_f_qn (p, q, n);
    b := Def_b (p, q^n);
    K := BaseRing (Parent (b));
-   b := GL(p, K) ! b;
+   // b := GL(p, K) ! b;
    s := GL(p, K) ! Def_s (p);
    x := MyEvaluate (facs[r], s, b);
    d := Order (q, p);

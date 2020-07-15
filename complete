@@ -1,0 +1,28 @@
+
+AttachSpec ("spec");
+
+N := [];
+C := [0];
+One := [];
+Two := [];
+for m in [2..10000] do
+   "\n";
+   B := PrimeBasis (m);
+   nmr := 0;
+   "m is ", m, B;
+   for p in B do 
+tt := Cputime ();
+         L := MonomialClasses (p, m: Fast := true);
+Append (~One, Cputime (tt));
+tt := Cputime ();
+         M := MonomialClasses (p, m: Fast := false);
+Append (~Two, Cputime (tt));
+         assert #L eq #M;
+         // assert {Generators (L[i]) eq Generators (M[i]): i in [1..#L]} subset {true};
+         "\nOrder = ", m, " Dimension = ", p, "# of reps is ", #L;
+         nmr +:= #L;
+   end for;
+   Append (~C, nmr);
+   // if #C mod 100 eq 0 then "UP TO NOW"; PrintFileMagma ("TABLE1", C); end if;
+end for;
+

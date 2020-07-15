@@ -171,6 +171,7 @@ SL32_Reps := function (p, m: Count := false)
 
    V0, P, Y, PY := SL32_ListGroups (p, P, M, L, S, V, N_S, N_V: 
       Sparse := true, Count := Count);
+   assert #L * 2 eq #P + #PY;
 
    index := EliminateReducible (p, P, O: offset := 0);
    if Count eq false then 

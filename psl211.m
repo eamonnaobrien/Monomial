@@ -97,6 +97,7 @@ PSL211_Reps := function (p, m: Count := false)
    // "# of modules is ", #M;
    L :=  PSL211_Submodules (p, P, O);
    X, P := PSL211_ListGroups (p, P, M, L: Sparse := true, Count := Count);
+   assert #P eq #L;
    index := EliminateReducible (p, P, O: offset := 0);
    if Count eq false then 
       X := [X[i]: i in index]; 

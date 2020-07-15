@@ -82,6 +82,7 @@ Sym_Reps := function (p, m: Count := false)
    // "Number of modules is ", #M;
    L := Sym_ListSubmodules (p, P, O);
    X, P := Sym_ListGroups (p, P, M, O, L, Z: Count := Count);
+   assert #P eq #L * 2; 
    // "# of groups is ", #X;
    index := EliminateReducible (p, P, O: offset := 0);
    if Count eq false then 

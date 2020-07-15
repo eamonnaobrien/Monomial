@@ -7,7 +7,6 @@ PrimitiveDimension2 := function (m: Soluble := true, Insoluble := true)
 
    L := [];
 
-"HERE ", Soluble;
    n := m div 12;
    if Soluble and m mod 12 eq 0 and IsEven (n) then 
       E := CyclotomicField (LCM (3 * n, 4): Sparse := false);

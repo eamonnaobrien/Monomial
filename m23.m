@@ -92,6 +92,7 @@ M23_Reps := function (p, m: Count := false)
    // "modules is ", [#x: x in M];
    L :=  M23_Submodules (p, P, O);
    X, P := M23_ListGroups (p, P, M, L: Sparse := true, Count := Count);
+   assert #P eq #L;
    index := EliminateReducible (p, P, O: offset := 0);
    if Count eq false then 
       X := [X[i]: i in index]; 

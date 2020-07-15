@@ -104,6 +104,7 @@ M11_Reps := function (p, m: Count := false)
    // "# of modules is ", #M;
    L :=  M11_Submodules (p, P, O);
    X, P := M11_ListGroups (p, P, M, L: Sparse := true, Count := Count);
+   assert #P eq 2 * #L;
    index := EliminateReducible (p, P, O: offset := 0);
    if m eq 7920 then index := [2]; end if;
    if Count eq false then 

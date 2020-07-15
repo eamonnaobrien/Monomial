@@ -2,8 +2,8 @@ AttachSpec ("spec");
 SetVerbose ("Infinite", 0);
 
 N := [];
-C := [];
-for m in [1..10^6] do
+C := [0];
+for m in [2..10^6] do
    "\n";
    B := PrimeBasis (m);
    nmr := 0;

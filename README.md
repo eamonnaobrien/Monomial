@@ -52,7 +52,10 @@ L, P := MonomialClasses (3, 270000: Count := true);
 // all 3-dimensional irreducible groups of order 3600
 
 M, P := IrreducibleClasses (3, 3600);
-The first list consists of monomial groups; the second primitive groups.
+
+#M; // monomial groups
+
+#P; // primitive groups 
 
 
 The following files illustrate related computations:

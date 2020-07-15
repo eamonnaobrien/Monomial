@@ -3,7 +3,7 @@ Monomial groups in characteristic 0 and prime degree
 
 Dane Flannery and Eamonn O'Brien
 
-Magma code prepared June 2020
+Magma code prepared July 2020
 
 The code is based on the paper: 
 
@@ -24,11 +24,11 @@ intrinsic MonomialClasses (p :: RngIntElt, m :: RngIntElt :
  reducing associated setup time}
 
 intrinsic IrreducibleClasses (p :: RngIntElt, m :: RngIntElt:
-  Soluble := true, Insoluble := true) -> []
+  Soluble := true, Insoluble := true) -> [], [] 
 
 {return representatives of conjugacy classes of irreducible subgroups
- of order m in GL(p, C), where p is 2 or 3, as lists of monomial and
- primitive groups; if either Soluble or Insoluble is false, then the
+ of order m in GL(p, C), where p is 2 or 3, as separate lists of monomial 
+ and primitive groups; if either Soluble or Insoluble is false, then the
  corresponding groups are omitted; default for both is true.}
 
 A few examples:
@@ -51,7 +51,9 @@ L, P := MonomialClasses (3, 270000: Count := true);
 
 // all 3-dimensional irreducible groups of order 3600
 
-L := IrreducibleClasses (3, 3600);
+M, P := IrreducibleClasses (3, 3600);
+The first list consists of monomial groups; the second primitive groups.
+
 
 The following files illustrate related computations:
 insoluble-table3, soluble-table3, table2, sample  

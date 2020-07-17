@@ -24,7 +24,7 @@ end function;
 
 time A, B := MonomialClasses (7, 168 * 8: Algebras:=true, 
                            Soluble := false);
-G := AlgebraToGroup (A[1]);
+G := AlgebraToGroup (A[3]);
 G := SparseToStandard (G);
 f, I := IsomorphicCopy (G);
 LMGCompositionFactors (I);

@@ -61,3 +61,5 @@ M, P := IrreducibleClasses (3, 3600);
 The following files illustrate related computations:
 insoluble-table3, soluble-table3, table2, insoluble-checks
 
+The file misc.m has some useful auxiliary functions for working with the output of the intrinsic functions. 
+

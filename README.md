@@ -3,11 +3,11 @@ Monomial groups in characteristic 0 and prime degree
 
 Dane Flannery and Eamonn O'Brien
 
-Magma code prepared July 2020
-
 The code is based on the paper: 
 
-Z. B'acskai, D.L. Flannery, and E.A. O'Brien.  "Classifying finite monomial linear groups of prime degree in characteristic zero". Preprint 2020.
+Z. B'acskai, D.L. Flannery, and E.A. O'Brien.  "Classifying finite monomial linear groups of prime degree in characteristic zero". 
+Internat. Journal Algebra Comput. 2021
+https://arxiv.org/abs/2107.12252 
 
 ===========================
 
